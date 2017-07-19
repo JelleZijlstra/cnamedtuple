@@ -87,14 +87,22 @@ def run_test(test, fields):
             setup='from collections import namedtuple;%s' % setup,
         )
         print(collections.format())
+        print('  fasternt: ', end='', flush=True)
+        fasternt = timeit(
+            command,
+            setup='from fasternt import namedtuple;%s' % setup,
+        )
+        print(fasternt.format())
         print('  cnamedtuple: ', end='', flush=True)
         cnamedtuple = timeit(
             command,
             setup='from cnamedtuple import namedtuple;%s' % setup,
         )
         print(cnamedtuple.format())
+        ratio = collections.median() / fasternt.median()
+        print('  fasternt ratio:      %.2f' % ratio)
         ratio = collections.median() / cnamedtuple.median()
-        print('  ratio:       %.2f\n' % ratio)
+        print('  cnamedtuple ratio:   %.2f\n' % ratio)
         yield ratio
 
 

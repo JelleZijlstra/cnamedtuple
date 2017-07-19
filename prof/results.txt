@@ -1,0 +1,235 @@
+Running with: Python 3.6.1 (default, Apr 24 2017, 06:18:27) [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]
+
+type creation from string with 1 field(s): namedtuple('NT', 'a')
+  collections: 355 us +- 69 us
+  fasternt: 65.4 us +- 2.2 us
+  cnamedtuple: 9.15 us +- 0.71 us
+  fasternt ratio:      5.06
+  cnamedtuple ratio:   36.92
+
+type creation from string with 2 field(s): namedtuple('NT', 'a b')
+  collections: 361 us +- 27 us
+  fasternt: 73.4 us +- 5.5 us
+  cnamedtuple: 9.38 us +- 0.43 us
+  fasternt ratio:      4.83
+  cnamedtuple ratio:   37.78
+
+type creation from string with 3 field(s): namedtuple('NT', 'a b c')
+  collections: 451 us +- 103 us
+  fasternt: 82.9 us +- 10.7 us
+  cnamedtuple: 9.80 us +- 0.63 us
+  fasternt ratio:      5.16
+  cnamedtuple ratio:   43.13
+
+type creation from string with 4 field(s): namedtuple('NT', 'a b c d')
+  collections: 417 us +- 37 us
+  fasternt: 85.9 us +- 5.5 us
+  cnamedtuple: 10.4 us +- 3.0 us
+  fasternt ratio:      4.80
+  cnamedtuple ratio:   41.03
+
+type creation from string with 5 field(s): namedtuple('NT', 'a b c d e')
+  collections: 451 us +- 134 us
+  fasternt: 98.7 us +- 31.9 us
+  cnamedtuple: 10.9 us +- 3.3 us
+  fasternt ratio:      4.72
+  cnamedtuple ratio:   41.79
+
+type creation from string with 6 field(s): namedtuple('NT', 'a b c d e f')
+  collections: 439 us +- 15 us
+  fasternt: 95.9 us +- 5.7 us
+  cnamedtuple: 10.5 us +- 0.5 us
+  fasternt ratio:      4.56
+  cnamedtuple ratio:   41.47
+
+type creation from string with 7 field(s): namedtuple('NT', 'a b c d e f g')
+  collections: 459 us +- 16 us
+  fasternt: 104 us +- 4 us
+  cnamedtuple: 11.3 us +- 0.4 us
+  fasternt ratio:      4.44
+  cnamedtuple ratio:   40.67
+
+type creation from string with 8 field(s): namedtuple('NT', 'a b c d e f g h')
+  collections: 485 us +- 29 us
+  fasternt: 112 us +- 7 us
+  cnamedtuple: 12.3 us +- 0.8 us
+  fasternt ratio:      4.34
+  cnamedtuple ratio:   39.29
+
+type creation from sequence with 1 field(s): namedtuple('NT', ['a'])
+  collections: 349 us +- 50 us
+  fasternt: 64.2 us +- 4.2 us
+  cnamedtuple: 8.78 us +- 0.35 us
+  fasternt ratio:      5.21
+  cnamedtuple ratio:   38.09
+
+type creation from sequence with 2 field(s): namedtuple('NT', ['a', 'b'])
+  collections: 345 us +- 10 us
+  fasternt: 71.2 us +- 4.6 us
+  cnamedtuple: 9.45 us +- 0.94 us
+  fasternt ratio:      4.92
+  cnamedtuple ratio:   37.59
+
+type creation from sequence with 3 field(s): namedtuple('NT', ['a', 'b', 'c'])
+  collections: 372 us +- 12 us
+  fasternt: 76.5 us +- 5.0 us
+  cnamedtuple: 9.39 us +- 0.37 us
+  fasternt ratio:      4.88
+  cnamedtuple ratio:   39.70
+
+type creation from sequence with 4 field(s): namedtuple('NT', ['a', 'b', 'c', 'd'])
+  collections: 400 us +- 25 us
+  fasternt: 83.4 us +- 4.9 us
+  cnamedtuple: 9.70 us +- 0.31 us
+  fasternt ratio:      4.80
+  cnamedtuple ratio:   40.86
+
+type creation from sequence with 5 field(s): namedtuple('NT', ['a', 'b', 'c', 'd', 'e'])
+  collections: 425 us +- 25 us
+  fasternt: 89.3 us +- 3.1 us
+  cnamedtuple: 10.1 us +- 0.5 us
+  fasternt ratio:      4.71
+  cnamedtuple ratio:   41.89
+
+type creation from sequence with 6 field(s): namedtuple('NT', ['a', 'b', 'c', 'd', 'e', 'f'])
+  collections: 439 us +- 18 us
+  fasternt: 98.3 us +- 7.4 us
+  cnamedtuple: 10.5 us +- 0.7 us
+  fasternt ratio:      4.54
+  cnamedtuple ratio:   42.29
+
+type creation from sequence with 7 field(s): namedtuple('NT', ['a', 'b', 'c', 'd', 'e', 'f', 'g'])
+  collections: 475 us +- 38 us
+  fasternt: 117 us +- 34 us
+  cnamedtuple: 11.3 us +- 0.5 us
+  fasternt ratio:      4.37
+  cnamedtuple ratio:   41.29
+
+type creation from sequence with 8 field(s): namedtuple('NT', ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+  collections: 479 us +- 18 us
+  fasternt: 113 us +- 9 us
+  cnamedtuple: 11.3 us +- 0.4 us
+  fasternt ratio:      4.31
+  cnamedtuple ratio:   41.99
+
+type instance creation with positional arguments and 1 field(s): NT(0)
+  collections: 456 ns +- 25 ns
+  fasternt: 453 ns +- 22 ns
+  cnamedtuple: 286 ns +- 11 ns
+  fasternt ratio:      1.01
+  cnamedtuple ratio:   1.58
+
+type instance creation with positional arguments and 2 field(s): NT(0, 1)
+  collections: 475 ns +- 23 ns
+  fasternt: 467 ns +- 23 ns
+  cnamedtuple: 305 ns +- 25 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.58
+
+type instance creation with positional arguments and 3 field(s): NT(0, 1, 2)
+  collections: 511 ns +- 113 ns
+  fasternt: 479 ns +- 17 ns
+  cnamedtuple: 303 ns +- 11 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.60
+
+type instance creation with positional arguments and 4 field(s): NT(0, 1, 2, 3)
+  collections: 494 ns +- 19 ns
+  fasternt: 509 ns +- 32 ns
+  cnamedtuple: 317 ns +- 18 ns
+  fasternt ratio:      0.99
+  cnamedtuple ratio:   1.56
+
+type instance creation with positional arguments and 5 field(s): NT(0, 1, 2, 3, 4)
+  collections: 540 ns +- 64 ns
+  fasternt: 512 ns +- 21 ns
+  cnamedtuple: 333 ns +- 24 ns
+  fasternt ratio:      1.04
+  cnamedtuple ratio:   1.60
+
+type instance creation with positional arguments and 6 field(s): NT(0, 1, 2, 3, 4, 5)
+  collections: 559 ns +- 49 ns
+  fasternt: 533 ns +- 28 ns
+  cnamedtuple: 334 ns +- 17 ns
+  fasternt ratio:      1.04
+  cnamedtuple ratio:   1.64
+
+type instance creation with positional arguments and 7 field(s): NT(0, 1, 2, 3, 4, 5, 6)
+  collections: 545 ns +- 32 ns
+  fasternt: 545 ns +- 24 ns
+  cnamedtuple: 344 ns +- 9 ns
+  fasternt ratio:      1.00
+  cnamedtuple ratio:   1.58
+
+type instance creation with positional arguments and 8 field(s): NT(0, 1, 2, 3, 4, 5, 6, 7)
+  collections: 560 ns +- 20 ns
+  fasternt: 564 ns +- 31 ns
+  cnamedtuple: 343 ns +- 9 ns
+  fasternt ratio:      1.00
+  cnamedtuple ratio:   1.62
+
+type instance creation with keyword arguments and 1 field(s): NT(a=0)
+  collections: 573 ns +- 30 ns
+  fasternt: 569 ns +- 27 ns
+  cnamedtuple: 366 ns +- 43 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.60
+
+type instance creation with keyword arguments and 2 field(s): NT(a=0, b=1)
+  collections: 617 ns +- 32 ns
+  fasternt: 617 ns +- 30 ns
+  cnamedtuple: 395 ns +- 14 ns
+  fasternt ratio:      1.00
+  cnamedtuple ratio:   1.55
+
+type instance creation with keyword arguments and 3 field(s): NT(a=0, b=1, c=2)
+  collections: 660 ns +- 25 ns
+  fasternt: 680 ns +- 43 ns
+  cnamedtuple: 430 ns +- 15 ns
+  fasternt ratio:      0.98
+  cnamedtuple ratio:   1.53
+
+type instance creation with keyword arguments and 4 field(s): NT(a=0, b=1, c=2, d=3)
+  collections: 720 ns +- 31 ns
+  fasternt: 716 ns +- 42 ns
+  cnamedtuple: 476 ns +- 25 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.52
+
+type instance creation with keyword arguments and 5 field(s): NT(a=0, b=1, c=2, d=3, e=4)
+  collections: 772 ns +- 59 ns
+  fasternt: 767 ns +- 64 ns
+  cnamedtuple: 520 ns +- 41 ns
+  fasternt ratio:      1.01
+  cnamedtuple ratio:   1.49
+
+type instance creation with keyword arguments and 6 field(s): NT(a=0, b=1, c=2, d=3, e=4, f=5)
+  collections: 914 ns +- 181 ns
+  fasternt: 985 ns +- 160 ns
+  cnamedtuple: 639 ns +- 57 ns
+  fasternt ratio:      0.94
+  cnamedtuple ratio:   1.40
+
+type instance creation with keyword arguments and 7 field(s): NT(a=0, b=1, c=2, d=3, e=4, f=5, g=6)
+  collections: 947 ns +- 75 ns
+  fasternt: 989 ns +- 112 ns
+  cnamedtuple: 747 ns +- 206 ns
+  fasternt ratio:      0.98
+  cnamedtuple ratio:   1.36
+
+type instance creation with keyword arguments and 8 field(s): NT(a=0, b=1, c=2, d=3, e=4, f=5, g=6, h=7)
+  collections: 1.03 us +- 0.13 us
+  fasternt: 1.02 us +- 0.10 us
+  cnamedtuple: 765 ns +- 117 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.41
+
+field access: instance.b
+  collections: 64.0 ns +- 15.5 ns
+  fasternt: 60.9 ns +- 3.5 ns
+  cnamedtuple: 31.1 ns +- 2.0 ns
+  fasternt ratio:      1.02
+  cnamedtuple ratio:   1.99
+
+
+median ratio: 1.99
